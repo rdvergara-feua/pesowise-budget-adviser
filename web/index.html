@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PesoWise Desktop</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Home screen: app icons on the left, app windows float on top -->
+  <main id="desktop" class="desktop">
+    <nav id="icons" class="icons" aria-label="Apps"></nav>
+    <p class="desktop-hint">Double-click an icon to open an app ♡</p>
+  </main>
+
+  <footer class="taskbar">
+    <span class="start">✦ PesoWise</span>
+    <div id="tasks" class="tasks"></div>
+    <span id="clock" class="clock"></span>
+  </footer>
+
+  <!-- Popup used by the Adviser's VIEW CHARTS button -->
+  <dialog id="popup" class="popup">
+    <div class="popup-title">
+      <span id="popup-title-text"></span>
+      <button id="popup-close" type="button" class="btn btn-pink popup-close">×</button>
+    </div>
+    <div id="popup-body" class="popup-body"></div>
+  </dialog>
+
+  <script type="module" src="js/desktop.js"></script>
+</body>
+</html>
